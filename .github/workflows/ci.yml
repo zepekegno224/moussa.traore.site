@@ -21,7 +21,7 @@ jobs:
         run: |
             git config --global user.name 'zepekegno224 '
             git config --global user.email 'moussatraore158@email.com'
-            git config --global user.password '669kaka22MT98!'
+            git config --global user.password '669kaka22MT'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
