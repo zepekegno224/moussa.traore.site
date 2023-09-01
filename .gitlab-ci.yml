@@ -3,10 +3,7 @@ image: node:latest
 pages:
     stage: build
     script:
-       - npm install
-       - npx resumed render resume.json --theme jsonresume-theme-mooser
-       - mkdir public 
-       - mv resume.html public/index.html
+       - mkdir public
     artifacts:
         paths:
             - public
