@@ -1,7 +1,5 @@
 
-image: node.tls
-stages:
-  - build
+image: node:latest
 pages:
     stage: build
     script:
