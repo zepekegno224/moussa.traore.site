@@ -5,10 +5,10 @@ stages:
 pages:
   stage: build
   script:
-      - npm install
+      - npm install resumed jsonresume-theme-mooser
       - npx resumed render resume.json --theme jsonresume-theme-mooser
       - mkdir public 
-      - mv resume.html public/cv.hml
+      - mv resume.html public/cv.html
   artifacts:
     paths:
       - public
