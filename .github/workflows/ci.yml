@@ -1,30 +1,19 @@
-name: "Publish Resume"
+name: Resume Creator from JSON
 on:
   push:
     branches:
       - master
-
 jobs:
-  publish_resume:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-
-      - name: Install the dependencies
-        run: npm install resume-cli jsonresume-theme-github
-
-      - name: Build the resume
-        run: ./node_modules/.bin/resume export public/index.html --theme github
-
-      - name: Configure Git
-        run: |
-            git config --global user.name 'zepekegno224 '
-            git config --global user.email 'moussatraore158@email.com'
-            git config --global user.password '669kaka22MT'
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          persist-credentials: false
+      - name: Build Resume and Deploy on GitHub Pages 🚀
+        uses: rajivnayanc/resume-creator-action@v1.1.0
+        with:
+          FileName: resume.json
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
