@@ -1,1 +1,6 @@
 
+image: node
+stages:
+  - build
+pages:
+    stage: build
