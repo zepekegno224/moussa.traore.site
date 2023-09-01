@@ -3,6 +3,7 @@ image: node:latest
 stages:
   - build
 pages:
+  stage: build
   script:
       - npm install
       - npx resumed render resume.json --theme jsonresume-mooser
