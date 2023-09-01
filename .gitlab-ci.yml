@@ -1,0 +1,13 @@
+image: node:latest
+
+stages:
+  - build
+pages:
+  script:
+      - npm install
+      - npx resumed render resume.json --theme jsonresume-mooser
+      - mkdir public 
+      - mv resume.html public/cv.hml
+  artifacts:
+    paths:
+      - public
