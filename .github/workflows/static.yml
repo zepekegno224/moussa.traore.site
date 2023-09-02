@@ -31,6 +31,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Set-up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+      - name: Install dependencies
+        run: |
+           npm install
+           npx resumed render resume.json --theme jsonresume-theme-mooser
+
+      - name: Set-up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1.*'
+      - name: Install Composer dependencies
+        run: composer install
+
+      - name: Generate PDF
+        run: php ./php/generateCv.php
+
+      - name: Delete file Resume html
+        run: |
+           rm -r resume.html 
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -38,6 +62,7 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
