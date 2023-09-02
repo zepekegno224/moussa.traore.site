@@ -41,19 +41,19 @@ jobs:
            npm install
            npx resumed render resume.json --theme jsonresume-theme-latte
 
-      - name: Set-up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1.*'
-      - name: Install Composer dependencies
-        run: composer install
+      #- name: Set-up PHP
+       # uses: shivammathur/setup-php@v2
+        #with:
+         # php-version: '8.1.*'
+      #- name: Install Composer dependencies
+       # run: composer install
 
-      - name: Generate PDF
-        run: php ./php/generateCv.php
+      #- name: Generate PDF
+       # run: php ./php/generateCv.php
 
-      - name: Delete file Resume html
-        run: |
-           rm -r resume.html 
+      #- name: Delete file Resume html
+       # run: |
+          # rm -r resume.html 
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
