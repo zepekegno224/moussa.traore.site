@@ -1,6 +1,6 @@
 $(document).ready(() => {
 	// Button active class
-	$('.control').each((i, el) => {
+	$('.control.menu').each((i, el) => {
 		$(el).click(function (e) {
 			$('.active').removeClass('active');
 			$(this).addClass('active');
@@ -23,10 +23,12 @@ $(document).ready(() => {
 		clearInterval(textAnimInterval)
 	}
 
+	// circle menu
 	$('#button-social').click(function (e) {
 		$(('#circleMenu')).toggleClass('show')
 	});
 
+	// contact form
 	$('#form-contact').on('submit', function (event) {
 		event.preventDefault(); // prevent reload
 		$("#btn-contact").addClass('disabled')
@@ -43,7 +45,7 @@ $(document).ready(() => {
 			processData: false // no need to parse formData to string
 		}).done(function () {
 			Toastify({
-				text: "Your message is sent to me. I will get you back soon.",
+				text: "Your mail is sent! Thanks you.",
 				duration: 5000,
 				newWindow: true,
 				close: true,
@@ -51,7 +53,7 @@ $(document).ready(() => {
 				position: "center", // `left`, `center` or `right`
 				stopOnFocus: true, // Prevents dismissing of toast on hover
 				style: {
-					background: "linear-gradient(to right, #00b09b, #96c93d)",
+					background: "rgb(23, 55, 94)",
 				},
 				onClick: function () { 
 					alert('')
@@ -95,7 +97,7 @@ const textAnimLoad = () => {
 	}, 8000)
 
 	setTimeout(() => {
-		textElement.textContent = 'APP DEVELOPER'
+		textElement.textContent = 'Fullstack Developer'
 	}, 12000)
 
 }

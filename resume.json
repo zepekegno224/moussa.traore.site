@@ -94,7 +94,15 @@
       "name": "Back End",
       "keywords": [
         "PHP",
-        "SYMFONY",
+        "SYMFONY"
+      ]
+    },
+    {
+      "level": "Basic",
+      "name": "Other",
+      "keywords": [
+        "Python",
+        "C/C++",
         "Nodejs",
         "LARAVEL"
       ]
