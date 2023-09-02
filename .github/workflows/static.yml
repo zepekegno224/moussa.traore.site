@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
            npm install
-           npx resumed render resume.json --theme jsonresume-theme-mooser
+           npx resumed render resume.json --theme jsonresume-theme-latte
 
       - name: Set-up PHP
         uses: shivammathur/setup-php@v2
