@@ -5,7 +5,7 @@ use Dompdf\Dompdf;
 require './vendor/autoload.php';
 
 $dompdf = new Dompdf();
-$dompdf->loadHtml('./resume.html');
+$dompdf->loadHtml(file_get_contents('./resume.html'));
 $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
 
