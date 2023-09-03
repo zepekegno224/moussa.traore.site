@@ -5,15 +5,9 @@ $(document).ready(() => {
 			$('.active').removeClass('active');
 			$(this).addClass('active');
 			var section = $(this).attr('data-id');
-			$('.section .actvie').removeClass('active');
-			$(`#${section}`).addClass('active');
-			$(('#circleMenu')).removeClass('show')
+			$('.section .active').removeClass('active');
+			$(`#${section}`).addClass('active'); 
 		});
-	})
-
-	// Theme button
-	$('.theme-btn').click(function (e) {
-		$('body').toggleClass('light-mode')
 	})
 
 	// Text animation
@@ -22,11 +16,6 @@ $(document).ready(() => {
 	window.onclose = () => {
 		clearInterval(textAnimInterval)
 	}
-
-	// circle menu
-	$('#button-social').click(function (e) {
-		$(('#circleMenu')).toggleClass('show')
-	});
 
 	// contact form
 	$('#form-contact').on('submit', function (event) {

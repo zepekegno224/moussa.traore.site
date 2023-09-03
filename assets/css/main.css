@@ -105,7 +105,6 @@ section {
 
 .section.active {
 	display: block;
-	transform: translateY(0) scale(1);
 	animation: scaleAnim 1s ease-in-out;
 }
 
@@ -160,7 +159,7 @@ section.header {
 }
 
 .header-content .header-left image img:hover {
-	filter: grayscale(0);
+	filter:grayscale();
 }
 
 @media screen and (min-width: 992px) {
@@ -294,7 +293,6 @@ section.header {
 	}
 }
 
-
 .motion {
 	transition: all .5 ease-in;
 }
@@ -322,21 +320,18 @@ section.header {
 
 .controls {
 	position: fixed;
-	top: auto;
+	bottom: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: start;
-	padding-bottom: 2rem;
-	background-color: var(--color-primary);
+	align-items: center;
+	background-color: var(--color-gray-2);
 	box-shadow: var(--box-shadow-1);
 	width: 100%;
-	padding-bottom: 2.8rem;
-	transform: translateY(-60%);
+	z-index: 100;
 }
 
 .controls .control.menu.active {
-	transition: all .5s ease-in-out;
 	background-color: var(--bg-primary);
 	color: var(--bg-secondary);
 	animation: scaleAnim 1s ease-in-out;
@@ -363,15 +358,8 @@ section.header {
 }
 
 .controls .control.social {
-	background-color: rgba(0, 0, 236, .3);
+	background-color: rgb(83, 83, 83);
 	color: #FFFFFF;
-}
-
-.menu-bar {
-	background-color: var(--color-secondary);
-	height: 2rem;
-	width: .1rem;
-	align-self: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -384,22 +372,33 @@ section.header {
 		background-color: transparent;
 		box-shadow: none;
 		z-index: 100;
+		width: auto;
 	}
 }
 
-@media screen and (min-width: 1400px) {
-	.controls {
-		top: 50%;
-		right: 0;
-		left: 95%;
-		flex-direction: column;
-		transform: translateY(-50%);
-		background-color: transparent;
-		box-shadow: none;
-		z-index: 100;
+#contact{
+	padding-bottom: 5rem;
+}
+@media screen and (min-width: 992px) {
+	#contact{
+		padding-bottom: 0;
 	}
 }
 
+.menu-bar {
+	background-color: var(--color-secondary);
+	height: 2rem;
+	width: .1rem;
+	align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+	.menu-bar {;
+		height:.1rem;
+		width: 2rem;
+		align-self: inherit;
+	}
+}
 
 @keyframes scaleAnim {
 	0% {
