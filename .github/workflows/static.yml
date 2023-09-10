@@ -39,14 +39,14 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          npx resumed export --format pdf --theme jsonresume-theme-latte resume.json resume.pdf
+          npx resumed render resume.json --theme jsonresume-theme-latte resume.pdf
 
-      #- name: Install wkhtmltopdf
-        #run: sudo apt-get install -y wkhtmltopdf
+      - name: Install wkhtmltopdf
+        run: sudo apt-get install -y wkhtmltopdf
   
-      #- name: Generate PDF
-        #run: |
-          #  wkhtmltopdf --page-size A4 resume.html resume.pdf
+      - name: Generate PDF
+        run: |
+           wkhtmltopdf --page-size A4 --margin-top 0mm --margin-bottom 0mm --margin-left 0mm --margin-right 0mm resume.html resume.pdf
       #  working-directory: path/to/your/template
      # - name: Set-up PHP
         #uses: shivammathur/setup-php@v2
