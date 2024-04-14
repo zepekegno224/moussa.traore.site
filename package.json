@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@anthonyjdella/jsonresume-theme-anthonyjdella-mocha-responsive": "^1.0.4",
+    "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-latte": "^1.0.2",
     "jsonresume-theme-mooser": "^0.2.7",
     "jsonresume-theme-rickosborne": "^2022.9.16-T1450",

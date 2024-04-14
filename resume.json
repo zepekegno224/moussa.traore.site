@@ -1,173 +1,156 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
-    "name": "Moussa Traoré",
-    "label": "Software Ingeneer",
-    "image": "./assets/image/2.jpg",
-    "email": "moussatraore158@mail.com",
-    "phone": "(224) 621 58 77 34",
-    "url": "https://zepekegno224.github.io/portofolio/",
-    "summary": "I am a passionate fullstack web developer with a solid educational background from La Source University. My expertise spans the entire technology stack, from crafting captivating front-end designs to building robust server-side implementations. With a zeal for creating exceptional online experiences, I have worked on diverse projects ranging from interactive web applications to high-performance e-commerce sites.",
-    "location": {
-      "address": "Sonfonia (Ratoma)",
-      "postalCode": "625",
-      "city": "Conakry",
-      "countryCode": "GN",
-      "region": "Conakry"
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Moussa Traoré",
+        "label": "Software Ingeneer",
+        "image": "./assets/image/WhatsApp Image 2024-03-07 at 04.37.47 (1).jpeg",
+        "email": "moussatraore158@mail.com",
+        "phone": "(224) 621 58 77 34",
+        "url": "https://zepekegno224.github.io/portofolio/",
+        "summary": "I am a passionate fullstack web developer with a solid educational background from La Source University. My expertise spans the entire technology stack, from crafting captivating front-end designs to building robust server-side implementations. With a zeal for creating exceptional online experiences, I have worked on diverse projects ranging from interactive web applications to high-performance e-commerce sites.",
+        "location": {
+            "address": "Sonfonia (Ratoma)",
+            "postalCode": "625",
+            "city": "Conakry",
+            "countryCode": "GN",
+            "region": "Conakry"
+        },
+        "profiles": [{
+                "network": "Github",
+                "username": "zepekegno224",
+                "url": "https://github.com/zepekegno224"
+            },
+            {
+                "network": "Twitter",
+                "username": "musstra98",
+                "url": "https://twitter.com/musstra98"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Moussa Traoré",
+                "url": "https://linkedin.com/in/moussa-traore-b1a5a31a4"
+            }
+        ]
     },
-    "profiles": [
-      {
-        "network": "Github",
-        "username": "zepekegno224",
-        "url": "https://github.com/zepekegno224"
-      },
-      {
-        "network": "Twitter",
-        "username": "musstra98",
-        "url": "https://twitter.com/musstra98"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "Moussa Traoré",
-        "url": "https://linkedin.com/in/moussa-traore-b1a5a31a4"
-      },
-      {
-        "network": "Facebook",
-        "username": "Moussa Traoré",
-        "url": "https://www.facebook.com/zepkegno2248"
-      }
+    "work": [{
+        "name": "Brainsense",
+        "location": "Kaloum",
+        "description": "Brainsense",
+        "position": "Fullstack Developer",
+        "url": "https://brainsense.fr/",
+        "startDate": "2021-11-07",
+        "summary": "The role involves a range of activities related to web development, from planning and specification writing to hands-on coding and collaboration with team membe",
+        "highlights": [
+            "Web and Web Platform Analysis and Development",
+            "Writing Functional and Technical Specifications",
+            "Contributing to User Stories",
+            "Establishing Technical Application Architecture",
+            "Participation in Daily Meetings",
+            "Supporting Team Members in Development"
+        ]
+    }],
+    "education": [{
+        "institution": "University of La Source",
+        "url": "https://www.universitelasource.com/",
+        "studyType": "MS/MSc, MA",
+        "startDate": "2016-11",
+        "endDate": "2021-02",
+        "score": "4.0"
+    }],
+    "publications": [{
+        "name": "PHP library",
+        "publisher": "Moussa Traoré",
+        "releaseDate": "2022-11",
+        "url": "https://packagist.org/packages/zepekegno/resize-image",
+        "summary": "Resize an image and convert into another format. driver use is GD"
+    }],
+    "skills": [{
+            "name": "Front End",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "JQuery",
+                "React JS",
+                "React Native"
+            ]
+        },
+        {
+            "level": "Senior",
+            "name": "Back End",
+            "keywords": [
+                "PHP",
+                "SYMFONY"
+            ]
+        },
+        {
+            "name": "Other",
+            "keywords": [
+                "Python",
+                "C/C++",
+                "Nodejs",
+                "Laravel"
+            ]
+        }
+    ],
+    "languages": [{
+            "language": "Franch",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Write && Read"
+        }
+    ],
+    "interests": [
+        { "name": "Sport" },
+        { "name": "Jeux video" },
+        { "name": "Reading" },
+        { "name": "Open Source" }
+    ],
+    "projects": [{
+            "name": "Electronic signature platform",
+            "description": "Development of an electronic signature platform with the Symfony Framework",
+            "keywords": [
+                "Php",
+                "Symfony",
+                "Javascript",
+                "JQuery",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "API electronic signature",
+            "description": "Development of an API for electronic signature with the Symmfony Framework",
+            "keywords": [
+                "Php",
+                "Symfony",
+                "Javascript",
+                "JQuery",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "Platform web for collecting digital needs",
+            "description": "Development of a platform for collecting digital needs with the Symfony Framework",
+            "keywords": [
+                "Php",
+                "Symfony",
+                "Javascript",
+                "JQuery",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "Certificate delivery platform",
+            "description": "Development of a certificate delivery platform",
+            "keywords": [
+                "Php",
+                "Symfony",
+                "Javascript",
+                "JQuery",
+                "Bootstrap"
+            ]
+        }
     ]
-  },
-  "work": [
-    {
-      "name": "Brainsense",
-      "location": "Kaloum",
-      "description": "Brainsense",
-      "position": "Fullstack Developer",
-      "url": "https://brainsense.fr/",
-      "startDate": "2021-11-07", 
-      "summary": "The role involves a range of activities related to web development, from planning and specification writing to hands-on coding and collaboration with team membe",
-      "highlights": [
-        "Web and Web Platform Analysis and Development",
-        "Writing Functional and Technical Specifications",
-        "Contributing to User Stories",
-        "Establishing Technical Application Architecture",
-        "Participation in Daily Meetings",
-        "Supporting Team Members in Development"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of La Source",
-      "url": "https://www.universitelasource.com/",
-      "studyType": "MS/MSc, MA",
-      "startDate": "2016-11",
-      "endDate": "2021-02",
-      "score": "4.0"
-    }
-  ],
-  "publications": [
-    {
-      "name": "PHP library",
-      "publisher": "Moussa Traoré",
-      "releaseDate": "2022-11",
-      "url": "https://packagist.org/packages/zepekegno/resize-image",
-      "summary": "Resize an image and convert into another format. driver use is GD"
-    }
-  ],
-  "skills": [
-    {
-      "level": "Confirmed",
-      "name": "Front End",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "JQuery",
-        "React JS",
-        "React Native"
-      ]
-    },
-    {
-      "level": "Confirmed",
-      "name": "Back End",
-      "keywords": [
-        "PHP",
-        "SYMFONY"
-      ]
-    },
-    {
-      "level": "Basic",
-      "name": "Other",
-      "keywords": [
-        "Python",
-        "C/C++",
-        "Nodejs",
-        "LARAVEL"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Franch",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Write && Read"
-    }
-  ],
-  "interests": [
-    {"name": "Sport"},
-    {"name": "Jeux video"},
-    {"name": "Reading"},
-  { "name": "Open Source"}
-  ],
-  "projects": [
-    {
-      "name": "Electronic signature platform",
-      "description": "Development of an electronic signature platform with the Symfony Framework",
-      "keywords": [
-        "Php",
-        "Symfony",
-        "Javascript",
-        "JQuery",
-        "Bootstrap"
-      ]
-    },
-    {
-      "name": "API electronic signature",
-      "description": "Development of an API for electronic signature with the Symmfony Framework",
-      "keywords": [
-        "Php",
-        "Symfony",
-        "Javascript",
-        "JQuery",
-        "Bootstrap"
-      ]
-    },
-    {
-      "name": "Platform web for collecting digital needs",
-      "description": "Development of a platform for collecting digital needs with the Symfony Framework",
-      "keywords": [
-        "Php",
-        "Symfony",
-        "Javascript",
-        "JQuery",
-        "Bootstrap"
-      ]
-    },
-    {
-      "name": "Certificate delivery platform",
-      "description": "Development of a certificate delivery platform",
-      "keywords": [
-        "Php",
-        "Symfony",
-        "Javascript",
-        "JQuery",
-        "Bootstrap"
-      ]
-    }
-  ]
 }
